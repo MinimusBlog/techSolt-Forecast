@@ -1,0 +1,27 @@
+.hero {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 24px;
+}
+
+.hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero__h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+.hero__cta {
+    display: flex;
+    gap: 32px;
+}
