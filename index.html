@@ -26,7 +26,6 @@
             </nav>
             <a class="header__login" href="#" aria-label="Вход в личный кабинет">
                 <img src="./images/icons/user.svg" alt="Иконка пользователя" />
-                <div>Вход</div>
             </a>
             <button class="header__mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                 <img src="./images/icons/burger.svg" alt="Мобильное меню" />
@@ -44,6 +43,124 @@
                 </div>
             </div>
             <img class="hero__right" src="./images/video.png" alt="Видео о чек-листе"/>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__wrapper">
+            <div class="check__left">
+                <h1 class="hero__h1">Чек-лист</h1>
+                <div class="question_wrapper">
+                    <form action="" method="post" class="checklist-form">
+                        <div class="checklist_wrapper">
+                            <label class="question" for="power">1. Компьютер включается?</label>
+                            <select class="checklist" name="power" id="power" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="gpu">2. Есть изображение на экране?</label>
+                            <select class="checklist" name="gpu" id="gpu" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="battery">3. Подключены ли все кабели?</label>
+                            <select class="checklist" name="battery" id="battery" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="motherboard">4. Есть ли индикация на материнской плате?</label>
+                            <select class="checklist" name="motherboard" id="motherboard" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="GPUs">5. Подключены ли дополнительные пины видеокарты?</label>
+                            <select class="checklist" name="GPUs" id="GPUs" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="CPU-AMD">6. Если процессор AMD не выпал ли он из сокета?</label>
+                            <select class="checklist" name="CPU-AMD" id="CPU-AMD" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="GPUs">7. Если процессор Intel 13-14 покление включен ли авторазгон?</label>
+                            <select class="checklist" name="GPUs" id="GPUs" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="GPUs">8. Если процессор Intel 13-14 поколения включен ли авторазгон?</label>
+                            <select class="checklist" name="GPUs" id="GPUs" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="RAM">9. Правильно ли установлен радиатор в материнской плате?</label>
+                            <select class="checklist" name="RAM" id="RAM" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="CPU-fan">10. Правильно ли установлен модуль памяти?</label>
+                            <select class="checklist" name="CPU-fan" id="CPU-fan" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="hdd">11. Подключены ли накопители?</label>
+                            <select class="checklist" name="hdd" id="hdd" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                        <div class="checklist_wrapper">
+                            <label class="question" for="lan">12. Имеются ли проблемы с сетевым подключением?</label>
+                            <select class="checklist" name="lan" id="lan" required>
+                                <option value="Выберите ответ" disabled selected>Выберите ответ</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="solution_wrapper">
+                    <div class="solution__left">
+                        <h2 class="solution__h2">Решение:</h2>
+                        <div class="solution-output">
+                            
+                        </div>
+                        <div class="solution__cta">
+                            <button class="button button_primary">Обратится на форум</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
