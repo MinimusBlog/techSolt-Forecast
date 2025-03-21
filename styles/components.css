@@ -24,6 +24,14 @@
     }
 }
 
+.button_ghost {
+    border: 1px solid var(--color-stroke);
+    &:hover {
+        background: var(--color-link-hover);
+        opacity: 0.9;
+    }
+}
+
 @media (max-width: 640px) {
     .button {
         padding: 12px 32px;
