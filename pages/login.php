@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Please fill in all fields.");
     }
 
-    // Prepare a statement to fetch user by username or email
     $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = ? OR email = ?");
     $stmt->bind_param("ss", $username_email, $username_email);
     $stmt->execute();
