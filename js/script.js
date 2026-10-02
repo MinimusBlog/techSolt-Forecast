@@ -1,0 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const registrationForm = document.getElementById('registrationForm');
+
+    if (registrationForm) {
+        registrationForm.addEventListener('submit', function(event) {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                event.preventDefault(); // Prevent form submission
+            }
+            // Add more validation here (e.g., check for minimum password length, email format)
+        });
+    }
+});

@@ -45,6 +45,12 @@
 
 }
 
+@media (max-width: 960px) {
+    .hero__cta {
+        margin: 20px;
+    }
+}
+
 @media (max-width: 640px) {
     .hero__h1 {
         font-size: 30px;
@@ -62,7 +68,7 @@
 
 @media (max-width: 480px) {
     .hero__cta {
-        gap: 16px;
+        margin: 20px;
     }
 }
 
@@ -104,5 +110,228 @@
     font-size: 24px;
 }
 
+.solution-output__error {
+    font-size: 20px;
+    color: red;
+}
+
+.solution-output__text {
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+.solution-output__info {
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+.form_wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text{
+    font-size: 36px;
+    color: var(--color-text);
+}
+
+.form__group {
+    background-color: var(--color-bg-medium-opacity);
+    margin: 30px 20px;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.auth-form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: var(--color-link-hover);
+}
+
+.auth-form__input {
+    width: 100%;
+    padding: 10px;
+    /* Немного увеличим padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Включаем padding и border в ширину */
+    font-size: 1em;
+}
+
+.auth-form__button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    /* Немного уменьшим размер шрифта кнопки */
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+    /* Добавим плавный переход */
+    &:hover {
+            color: var(---color-link-hover)
+        }
+}
+
+/* forum */
+.forum-container {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.forum__left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.forum-text {
+    font-size: 36px;
+    color: var(--color-text);
+}
+
+.text-hover {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-primary);
+    &:hover {
+            color: var(---color-link-hover)
+        }
+}
+
+.forum-text__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+.forum__create-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: var(--border-10);
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topic-list__item {
+    border: 1px solid var(--color-stroke);
+    background-color: var(--color-bg-medium-opacity);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.topic-list__link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.topic-list__link:hover {
+    color: var(--color-link-hover);
+}
+
+.topic-list__meta {
+    font-size: 0.9em;
+    color: var(--color-stroke);
+    margin-top: 5px;
+}
+
+/* Просмотр темы */
+.topic__back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.post {
+    border: 1px solid var(--color-stroke);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.post--topic {
+    background-color: var(--color-bg-medium-opacity);
+}
+
+.post__meta {
+    font-size: 0.8em;
+    color: var(--color-stroke);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.reply-form,
+.create-topic-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-stroke);
+}
 
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.reply-form textarea,
+.create-topic-form input[type="text"],
+.create-topic-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-stroke);
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Учитываем padding и border в ширине */
+    font-size: 1em;
+    margin-bottom: 15px;
+    /* Отступ после поля */
+}
+
+.reply-form button,
+.create-topic-form button {
+    display: inline-block;
+    /* Чтобы кнопка не растягивалась на всю ширину */
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.reply-form button:hover,
+.create-topic-form button:hover {
+    background-color: var(--color-link-hover);
+}

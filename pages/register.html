@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="../index.php"><img class="header__logo" src="../images/logos/logo.svg" alt="Логотип" /></a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item menu__item_active"><a href="../index.php">Чек-лист</a></li>
+                    <li class="menu__item"><a href="#">О нас</a></li>
+                    <li class="menu__item"><a href="./pages/forum.php">Форум</a></li>
+                    <li class="menu__item"><a href="#">База знаний</a></li>
+                </ul>
+            </nav>
+            <a class="header__login" href="../pages/register.html" aria-label="Вход в личный кабинет">
+                <img src="../images/icons/user.svg" alt="Иконка пользователя" />
+            </a>
+            <button class="header__mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                <img src="../images/icons/burger.svg" alt="Мобильное меню" />
+            </button>
+        </div>
+    </header>
+        <section class="section form_wrapper">
+            <form action="register.php" method="post" class="auth-form">
+                <div  class="form__group">
+                    <div class="form-text">
+                    <h2>Регистрация</h2>
+                    </div>
+                    <div>
+                        <label for="username" class="auth-form__label">Никнейм:</label>
+                        <input type="text" id="username" name="username" class="auth-form__input" required>
+                    </div>
+                    <div>
+                        <label for="email" class="auth-form__label">Почта:</label>
+                        <input type="email" class="auth-form__input" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password" class="auth-form__label">Подтвердите пароль:</label>
+                        <input type="password" name="password" class="auth-form__input" required>
+                    </div>
+                    <div>
+                        <label for="password" class="auth-form__label">Пароль:</label>
+                        <input type="confirm_password" name="confirm_password" class="auth-form__input" required>
+                    </div>
+                    <div>
+                    <button type="submit" class="auth-form__button">Зарегистрироваться</button>
+                    </div>
+                    <a href="./login.html"><p>Уже есть аккаунт?</p></a
+                </div>
+            </form>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

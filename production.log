@@ -1,0 +1,18 @@
+2025-05-15 22:05:46,284 - INFO - Система запущена.
+2025-05-15 22:05:46,284 - WARNING - Низкий уровень запасов на складе.
+2025-05-15 22:05:46,284 - ERROR - Произошло деление на ноль.
+Traceback (most recent call last):
+  File "c:\Users\User\Downloads\import logging.py", line 22, in <module>
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2025-05-15 22:05:46,290 - INFO - Система завершила работу.
+2025-05-15 22:07:13,605 - INFO - Система запущена.
+2025-05-15 22:07:13,606 - WARNING - Низкий уровень запасов на складе.
+2025-05-15 22:07:13,606 - ERROR - Произошло деление на ноль.
+Traceback (most recent call last):
+  File "c:\Users\User\Downloads\import logging.py", line 22, in <module>
+    result = 10 / 0
+             ~~~^~~
+ZeroDivisionError: division by zero
+2025-05-15 22:07:13,611 - INFO - Система завершила работу.
